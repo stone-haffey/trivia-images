@@ -1,16 +1,16 @@
 {
   "all_procs": {
-    "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,\r\n2,instruct,user,Hi this is Hannah,off,"
+    "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,\r\n2 to 3,trivia_cur_conf_answer,user,Hi this is Hannah,off,"
   },
   "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,",
   "all_stims": {
-    "stimuli_1.csv": "cue,answer,\r\nA,Apple,\r\nB,Banana,\r\n,,"
+    "stimuli_1.csv": "question,answer,\r\nWhere is London?,England,\r\nB,Banana,\r\n,,"
   },
   "location": "stone-haffey/trivia-images/first",
   "public_key": "8SKwu4422grMOXRU0Qo4cTuZTvJ+N6Q/VepXo4/M3hU=",
   "surveys": {},
   "phasetypes": {
-    "instruct": "[[[LOCATION]]]../Default/DefaultPhaseTypes/instruct.html"
+    "trivia_cur_conf_answer": "[[[LOCATION]]]../User/PhaseTypes/trivia_cur_conf_answer.html"
   },
   "procs_csv": {},
   "stims_csv": {}

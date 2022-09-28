@@ -1,0 +1,116 @@
+<!--
+/*  Collector (Garcia, Kornell, Kerr, Blake & Haffey)
+    A program for running experiments on the web
+    Copyright 2012-2016 Mikey Garcia & Nate Kornell
+
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 3 as published by
+    the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+		Kitten/Cat release (2019-2022) author: Dr. Anthony Haffey
+*/
+-->
+<style>
+  #instruct_text {
+    margin: auto;
+    width: 500px;
+    padding: 50px;
+    max-height: 600px;
+    text-align: center;
+  }
+  #proceed_button {
+    position: absolute;
+    right: 20px;
+  }
+  #trial_contents {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+  }
+  #curiousity_div, 
+  #confidence_div, 
+  #answer_div{
+    display:none;
+  }
+</style>
+<div id="trial_contents">
+  <div id="question_div">
+    <img src="{{question_src}}"/>
+    
+    <input type="text" id="quiz_response" name="quiz_response"> 
+    <button class="btn btn-primary" id="resp_button">
+      Submit
+    </button>
+    
+  </div>
+  <div id="curiousity_div" style="align:center;">
+    How curious are you about the answer to the question?<br>
+    <button class="btn btn-primary curiousity_button" value="1">1</button>
+    <button class="btn btn-primary curiousity_button" value="2">2</button>
+    <button class="btn btn-primary curiousity_button" value="3">3</button>
+    <button class="btn btn-primary curiousity_button" value="4">4</button>
+    <button class="btn btn-primary curiousity_button" value="5">5</button>
+    <button class="btn btn-primary curiousity_button" value="6">6</button>
+    <button class="btn btn-primary curiousity_button" value="7">7</button>
+    <button class="btn btn-primary curiousity_button" value="8">8</button>
+    <button class="btn btn-primary curiousity_button" value="9">9</button>
+    <button class="btn btn-primary curiousity_button" value="10">10</button>
+    <input type="hidden" name="curiousity_rating" id="curiousity_rating">
+  </div>
+  <div id="confidence_div">
+    How confident are you about the answer to the question?<br>
+    <button class="btn btn-primary confidence_button" value="1">1</button>
+    <button class="btn btn-primary confidence_button" value="2">2</button>
+    <button class="btn btn-primary confidence_button" value="3">3</button>
+    <button class="btn btn-primary confidence_button" value="4">4</button>
+    <button class="btn btn-primary confidence_button" value="5">5</button>
+    <button class="btn btn-primary confidence_button" value="6">6</button>
+    <button class="btn btn-primary confidence_button" value="7">7</button>
+    <button class="btn btn-primary confidence_button" value="8">8</button>
+    <button class="btn btn-primary confidence_button" value="9">9</button>
+    <button class="btn btn-primary confidence_button" value="10">10</button>
+    <input type="hidden" name="confidence_rating" id="confidence_rating">
+  </div>
+  <div id="answer_div">
+    <h1>The correct answer was: </h1>
+    <img src="{{answer_src}}"/>
+  </div>
+    
+  </div>
+</div>
+
+<script>
+$("#resp_button").on("click", function(){
+  $("#curiousity_div").show();
+  $("#question_div").hide();
+});
+$(".curiousity_button").on("click", function(){
+  $("#curiousity_rating").val($(this)[0].value);
+  $("#curiousity_div").hide();
+  $("#confidence_div").show();
+});
+$(".confidence_button").on("click", function(){
+  $("#confidence_rating").val($(this)[0].value);
+  $("#confidence_div").hide();
+  $("#answer_div").show();
+  setTimeout(function(){
+    Phase.submit();
+  },5000);
+});
+
+
+</script>
