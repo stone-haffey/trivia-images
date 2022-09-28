@@ -55,7 +55,7 @@
     <button class="btn btn-primary" id="resp_button">
       Submit
     </button>
-    
+    <input type="hidden" id="quiz_rt" name="quiz_rt">
   </div>
   <div id="curiousity_div" style="align:center;">
     How curious are you about the answer to the question?<br>
@@ -94,9 +94,27 @@
 </div>
 
 <script>
+var baseline_time;
+/*
+ * to start a timer at the start of a trial, you need Phase.set_timer()
+ */
+Phase.set_timer(function(){
+  baseline_time = (new Date()).getTime();
+  $("#resp_button").click();
+}, {{guess_duration}})
 $("#resp_button").on("click", function(){
   $("#curiousity_div").show();
   $("#question_div").hide();
+  var current_time = (new Date()).getTime();
+ 
+  /* fix this if you want meaningful reaction time data
+  if($("#quiz_rt").val() > 0){
+    //do nothing
+  } else {
+    $("#quiz_rt").val(current_time - baseline_time);
+  }
+  */
+  
 });
 $(".curiousity_button").on("click", function(){
   $("#curiousity_rating").val($(this)[0].value);
