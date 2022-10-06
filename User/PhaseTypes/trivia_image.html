@@ -49,7 +49,7 @@
 </style>
 <div id="trial_contents">
   <div id="question_div">
-    <img src="{{question_src}}"/>
+    <img id="question_img"/>
     
     <input type="text" id="quiz_response" name="quiz_response"> 
     <button class="btn btn-primary" id="resp_button">
@@ -87,13 +87,40 @@
   </div>
   <div id="answer_div">
     <h1>The correct answer was: </h1>
-    <img src="{{answer_src}}"/>
+    <img id="answer_img"/>
   </div>
     
   </div>
 </div>
 
 <script>
+switch(parent.parent.Project.get_vars.platform){
+  case "preview":
+  case "localhost":
+    org_repo = parent.parent.project_json.location.split("/");
+    home_dir = parent.parent.CElectron.git.locate_repo({
+      org: org_repo[0],
+      repo: org_repo[1]
+    });
+    break;
+  default:
+    home_dir = "../";
+    break;
+}
+
+var these_images;
+Phase.set_timer(function(){
+  all_images = Phase.get("all_images");
+  these_images = all_images.shift();
+  Phase.set("all_images", all_images);
+  console.log("these_images");
+  console.log(these_images);
+  $("#question_img").prop("src", home_dir + these_images.question_src.replace("../User","/User"));
+  $("#answer_img").prop("src", home_dir + these_images.answer_src.replace("../User","/User"));
+  
+  //question_img
+  
+},0);
 var baseline_time;
 /*
  * to start a timer at the start of a trial, you need Phase.set_timer()
