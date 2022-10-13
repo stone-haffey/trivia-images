@@ -1,0 +1,30 @@
+item_name,text,type,answers,optional,values,side_by_side,btn_width,
+PC1, I like exploring my surroundings.,likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC2," When I smell something new, I try and find
+  out what the odor is coming from.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC3, I like to discover new places to go.,likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC4," If I hear something rustling in the grass I
+  have to see what it is.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC5," I like visiting art galleries and art
+  museums.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC6," When I see a new fabric, I like to touch and
+  feel it.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC7," I like to listen to new and unusual kinds of
+  music.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC8," When I hear a musical instrument and I am
+  not sure what it is, I like to see it.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC9," I enjoy trying different kinds of ethnic
+  foods.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+PC10," When I hear a strange sound, I usually try
+  to find out what caused it.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+,,,,,,,,

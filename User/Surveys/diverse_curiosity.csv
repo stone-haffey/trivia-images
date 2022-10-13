@@ -1,0 +1,30 @@
+item_name,text,type,answers,optional,values,side_by_side,btn_width,
+DC1, I enjoy exploring new ideas. ,likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC2," Difficult conceptual problems can keep me
+  awake all night thinking about solutions.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC3," I enjoy learning about subjects that are
+  unfamiliar to me.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC4," I can spend hours on a single problem
+  because I just can’t rest without knowing the answer.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC5," I find it fascinating to learn new
+  information. ",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC6," I feel frustrated if I can’t figure out the
+  solution to a problem, so I work even harder to solve it.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC7," When I learn something new, I would like to
+  find out more about it. ",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC8," I brood for a long time in an attempt to
+  solve some fundamental problem.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC9, I enjoy discussing abstract concepts. ,likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+DC10," I work like a fiend at problems that I feel
+  must be solved.",likert,"Almost
+  Never|Sometimes|Often|Almost Always",No,1|2|3|4,yes,100px,
+,,,,,,,,

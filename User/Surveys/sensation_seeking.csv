@@ -1,0 +1,23 @@
+item_name,text,type,answers,optional,values,side_by_side,btn_width,
+SS1, I would like to explore strange places,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS2," I get restless when I spend too
+  much time at home",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS3, I like to do frightening things,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS4, I like wild parties,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS5," I would like to take off on a
+  trip with no pre-planned routes or timetables",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS6," I prefer friends who are
+  excitingly unpredictable",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS7," I would like to try bungee
+  jumping",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+SS8," I would love to have new and
+  exciting experiences, even if they are illegal",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+,,,,,,,,
