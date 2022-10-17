@@ -1,6 +1,6 @@
 {
   "all_procs": {
-    "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,\r\n0,load_list,,,off,,1,\r\n0,trivia_image,user,This is the start of a new experiment.,off,10000,50,"
+    "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,\r\n0,survey,,,,,1,trivia_demographics.csv,\r\n0,load_list,,,off,,1,,\r\n0,trivia_image,user,This is the start of a new experiment.,off,10000,50,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,"
   },
   "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,",
   "all_stims": {
@@ -9,8 +9,546 @@
   },
   "location": "stone-haffey/trivia-images/image_trivia",
   "public_key": "8SKwu4422grMOXRU0Qo4cTuZTvJ+N6Q/VepXo4/M3hU=",
-  "surveys": {},
+  "surveys": {
+    "perceptual_curiosity.csv": [
+      [
+        "item_name",
+        "text",
+        "type",
+        "answers",
+        "optional",
+        "values",
+        "side_by_side",
+        "btn_width",
+        ""
+      ],
+      [
+        "PC1",
+        " I like exploring my surroundings.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC2",
+        " When I smell something new, I try and find\n  out what the odor is coming from.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC3",
+        " I like to discover new places to go.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC4",
+        " If I hear something rustling in the grass I\n  have to see what it is.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC5",
+        " I like visiting art galleries and art\n  museums.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC6",
+        " When I see a new fabric, I like to touch and\n  feel it.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC7",
+        " I like to listen to new and unusual kinds of\n  music.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC8",
+        " When I hear a musical instrument and I am\n  not sure what it is, I like to see it.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC9",
+        " I enjoy trying different kinds of ethnic\n  foods.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "PC10",
+        " When I hear a strange sound, I usually try\n  to find out what caused it.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "diverse_curiosity.csv": [
+      [
+        "item_name",
+        "text",
+        "type",
+        "answers",
+        "optional",
+        "values",
+        "side_by_side",
+        "btn_width",
+        ""
+      ],
+      [
+        "DC1",
+        " I enjoy exploring new ideas. ",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC2",
+        " Difficult conceptual problems can keep me\n  awake all night thinking about solutions.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC3",
+        " I enjoy learning about subjects that are\n  unfamiliar to me.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC4",
+        " I can spend hours on a single problem\n  because I just can’t rest without knowing the answer.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC5",
+        " I find it fascinating to learn new\n  information. ",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC6",
+        " I feel frustrated if I can’t figure out the\n  solution to a problem, so I work even harder to solve it.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC7",
+        " When I learn something new, I would like to\n  find out more about it. ",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC8",
+        " I brood for a long time in an attempt to\n  solve some fundamental problem.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC9",
+        " I enjoy discussing abstract concepts. ",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DC10",
+        " I work like a fiend at problems that I feel\n  must be solved.",
+        "likert",
+        "Almost\n  Never|Sometimes|Often|Almost Always",
+        "No",
+        "1|2|3|4",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "sensation_seeking.csv": [
+      [
+        "item_name",
+        "text",
+        "type",
+        "answers",
+        "optional",
+        "values",
+        "side_by_side",
+        "btn_width",
+        ""
+      ],
+      [
+        "SS1",
+        " I would like to explore strange places",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS2",
+        " I get restless when I spend too\n  much time at home",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS3",
+        " I like to do frightening things",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS4",
+        " I like wild parties",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS5",
+        " I would like to take off on a\n  trip with no pre-planned routes or timetables",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS6",
+        " I prefer friends who are\n  excitingly unpredictable",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS7",
+        " I would like to try bungee\n  jumping",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "SS8",
+        " I would love to have new and\n  exciting experiences, even if they are illegal",
+        "likert",
+        "Strongly\n  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",
+        "No",
+        "1|2|3|4|5",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "trivia_demographics.csv": [
+      [
+        "item_name",
+        "text",
+        "type",
+        "answers",
+        "optional",
+        "values",
+        "side_by_side",
+        "btn_width",
+        ""
+      ],
+      [
+        "Age",
+        "How old are you?",
+        "number",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Gender",
+        "Do you identify as male, female, or other?",
+        "likert",
+        "Male|Female|Other",
+        "No",
+        "",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "Ethnicity",
+        "What is your ethnicity",
+        "likert",
+        "White|Mixed|Asian|Black|Other",
+        "No",
+        "",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "DOB",
+        "What is your date of birth?",
+        "text",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Education",
+        "How many years of education have you received, including grade school? (12 = high school diploma, 16 = Bachelor’s degree)",
+        "number",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Employment",
+        "What is your profession? If retired, please state your former profession.",
+        "text",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Sleep",
+        "How many hours did you sleep last night?",
+        "number",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Sleep_avg",
+        "How many hours do you usually sleep?",
+        "number",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Health",
+        "How would you describe your overall health, on a scale from 1 to 9? (1 = very poor health, 9 = excellent health)",
+        "number",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Stress",
+        "How does your stress level compare to your usual stress level on a scale from 1 to 9? (1 = much lower, 5 = same as usual, 9 = much higher) ",
+        "number",
+        "",
+        "No",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Language",
+        "Is English your first language?",
+        "likert",
+        "Yes|No",
+        "No",
+        "",
+        "yes",
+        "100px",
+        ""
+      ],
+      [
+        "Learning age",
+        "If not, at what age did you learn it?",
+        "number",
+        "",
+        "Yes",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
   "phasetypes": {
+    "survey": "[[[LOCATION]]]../Default/DefaultPhaseTypes/survey.html",
     "load_list": "[[[LOCATION]]]../User/PhaseTypes/load_list.html",
     "trivia_image": "[[[LOCATION]]]../User/PhaseTypes/trivia_image.html"
   },
