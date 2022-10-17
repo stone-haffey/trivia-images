@@ -1,6 +1,6 @@
 <script>
-all_images = parent.parent.Collector.PapaParsed(
-  Phase.get_stim("images.csv")
+all_stimuli = parent.parent.Collector.PapaParsed(
+  Phase.get_stim("{{stim_list}}")
 );
 
 /*
@@ -17,12 +17,12 @@ function shuffleArray(array) {
     array[j] = temp;
   }
 }
-shuffleArray(all_images);
+shuffleArray(all_stimuli);
 
 
-Phase.set("all_images", all_images);
-console.log("all_images");
-console.log(all_images);
+Phase.set("all_stimuli", all_stimuli);
+console.log("all_stimuli");
+console.log(all_stimuli);
 
 Phase.set_timer(function(){
   Phase.submit();

@@ -49,7 +49,7 @@
 </style>
 <div id="trial_contents">
   <div id="question_div">
-    <div id="question">{{question}}</div>
+    <div id="question"></div>
     
     <input type="text" id="quiz_response" name="quiz_response"> 
     <button class="btn btn-primary" id="resp_button">
@@ -86,16 +86,43 @@
     <input type="hidden" name="confidence_rating" id="confidence_rating">
   </div>
   <div id="answer_div">
-    <h1>The correct answer was: {{answer}}</h1>
+    <h1>The correct answer was: <span class="text-primary" id="answer"></span></h1>
   </div>
     
   </div>
 </div>
 
 <script>
+
+
+
+var these_images;
+Phase.set_timer(function(){
+  all_stimuli = Phase.get("all_stimuli");
+  question_answer = all_stimuli.shift();
+  Phase.set("all_stimuli", all_stimuli);
+  console.log("question_answer");
+  console.log(question_answer);
+  $("#question").html(question_answer.question);
+  $("#answer").html(question_answer.answer);
+  //question_img
+  
+},0);
+var baseline_time;
+/*
+ * to start a timer at the start of a trial, you need Phase.set_timer()
+ */
+Phase.set_timer(function(){
+  baseline_time = (new Date()).getTime();
+  $("#resp_button").click();
+}, {{guess_duration}});
+
 $("#resp_button").on("click", function(){
   $("#curiousity_div").show();
   $("#question_div").hide();
+  var current_time = (new Date()).getTime();
+ 
+  
 });
 $(".curiousity_button").on("click", function(){
   $("#curiousity_rating").val($(this)[0].value);
@@ -110,6 +137,8 @@ $(".confidence_button").on("click", function(){
     Phase.submit();
   },5000);
 });
+
+
 
 
 </script>

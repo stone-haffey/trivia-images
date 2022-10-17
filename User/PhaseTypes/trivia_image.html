@@ -110,9 +110,9 @@ switch(parent.parent.Project.get_vars.platform){
 
 var these_images;
 Phase.set_timer(function(){
-  all_images = Phase.get("all_images");
+  all_stimuli = Phase.get("all_stimuli");
   these_images = all_images.shift();
-  Phase.set("all_images", all_images);
+  Phase.set("all_stimuli", all_stimuli);
   console.log("these_images");
   console.log(these_images);
   $("#question_img").prop("src", home_dir + these_images.question_src.replace("../User","/User"));
