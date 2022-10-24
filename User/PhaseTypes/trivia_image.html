@@ -111,7 +111,7 @@ switch(parent.parent.Project.get_vars.platform){
 var these_images;
 Phase.set_timer(function(){
   all_stimuli = Phase.get("all_stimuli");
-  these_images = all_images.shift();
+  these_images = all_stimuli.shift();
   Phase.set("all_stimuli", all_stimuli);
   console.log("these_images");
   console.log(these_images);
