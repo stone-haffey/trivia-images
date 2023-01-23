@@ -152,6 +152,7 @@ $(".curiousity_button").on("click", function(){
   $("#curiousity_rating").val($(this)[0].value);
   $("#curiousity_div").hide();
   $("#answer_div").show();
+  $("#confidence_div").hide();
   setTimeout(function(){
     Phase.submit();
   },5000);
