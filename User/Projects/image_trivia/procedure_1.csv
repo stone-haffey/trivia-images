@@ -8,6 +8,11 @@ Please press <b>Proceed</b> when you are ready to begin the experiment.",,,1,,,
 0,survey,,,,,1,trivia_demographics.csv,,
 0,load_list,,,off,,1,,images.csv,
 0,trivia_image,user,This is the start of a new experiment.,off,10000,50,,,
+0,instruct,,"<h2>Thank you for completing this section of the study</h2><br><br>
+
+We now ask that you fill in the questionnaires on the following pages.<br><br>
+
+Please press <b>Proceed</b> when you are ready to begin.",,,1,,,
 0,survey,,,survey_random,,1,perceptual_curiosity.csv,,
 0,survey,,,survey_random,,1,diverse_curiosity.csv,,
 0,survey,,,survey_random,,1,sensation_seeking.csv,,
