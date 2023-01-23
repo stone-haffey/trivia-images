@@ -23,8 +23,8 @@
   #instruct_text {
     margin: auto;
     width: 500px;
-    padding: 50px;
     max-height: 600px;
+    padding: 50px;
     text-align: center;
   }
   #proceed_button {
@@ -40,6 +40,7 @@
     margin: auto;
     width: 600px;
     height: 600px;
+    align-content: center;
   }
   #confidence_div,
   #curiousity_div,
@@ -50,15 +51,14 @@
 <div id="trial_contents">
   <div id="question_div">
     <img id="question_img"/>
-    
-    <input type="text" id="quiz_response" name="quiz_response"> 
+    <input type="text" id="quiz_response" name="quiz_response" style=" margin-left: 150px; margin-top: 10px; padding: 5px; align-content: left">
     <button class="btn btn-primary" id="resp_button">
       Submit
     </button>
     <input type="hidden" id="quiz_rt" name="quiz_rt">
   </div>
-  <div id="confidence_div">
-    How confident are you about the answer to the question?<br>
+  <div id="confidence_div" style = "align:center; font-size: 150%">
+    How confident are you that you know the correct answer?<br>
     <button class="btn btn-primary confidence_button" value="1">1</button>
     <button class="btn btn-primary confidence_button" value="2">2</button>
     <button class="btn btn-primary confidence_button" value="3">3</button>
@@ -71,7 +71,7 @@
     <button class="btn btn-primary confidence_button" value="10">10</button>
     <input type="hidden" name="confidence_rating" id="confidence_rating">
   </div>
-  <div id="curiousity_div" style="align:center;">
+  <div id="curiousity_div" style="align:center; font-size: 150%">
     How curious are you about the answer to the question?<br>
     <button class="btn btn-primary curiousity_button" value="1">1</button>
     <button class="btn btn-primary curiousity_button" value="2">2</button>
@@ -85,7 +85,7 @@
     <button class="btn btn-primary curiousity_button" value="10">10</button>
     <input type="hidden" name="curiousity_rating" id="curiousity_rating">
   </div>
-  <div id="answer_div">
+  <div id="answer_div" style="align: center">
     <h1>The correct answer was: </h1>
     <img id="answer_img"/>
   </div>
