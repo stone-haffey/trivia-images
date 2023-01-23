@@ -1,0 +1,22 @@
+item_name,text,type,answers,optional,values,side_by_side,btn_width,
+OE1," I would be quite bored by a visit to an art gallery.",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE2,I'm interested in learning about the history and politics of other countries.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE3,"I would enjoy creating a work of art, such as a novel, a song, or a painting.",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE4,I think that paying attention to radical ideas is a waste of time.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE5,"If I had the opportunity, I would like to attend a classical music concert.",likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE6,I've never really enjoyed looking through an encyclopedia.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE7,People have often told me that I have a good imagination.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE8,I like people who have unconventional views.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE9,I don't think of myself as the artistic or creative type.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+OE10,I find it boring to discuss philosophy.,likert,"Strongly
+  disagree|Disagree|Neither disagree or agree|Agree|Strongly agree",No,1|2|3|4|5,yes,100px,
+,,,,,,,,
