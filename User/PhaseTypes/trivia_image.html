@@ -41,8 +41,8 @@
     width: 600px;
     height: 600px;
   }
-  #curiousity_div, 
-  #confidence_div, 
+  #confidence_div,
+  #curiousity_div,
   #answer_div{
     display:none;
   }
@@ -57,20 +57,6 @@
     </button>
     <input type="hidden" id="quiz_rt" name="quiz_rt">
   </div>
-  <div id="curiousity_div" style="align:center;">
-    How curious are you about the answer to the question?<br>
-    <button class="btn btn-primary curiousity_button" value="1">1</button>
-    <button class="btn btn-primary curiousity_button" value="2">2</button>
-    <button class="btn btn-primary curiousity_button" value="3">3</button>
-    <button class="btn btn-primary curiousity_button" value="4">4</button>
-    <button class="btn btn-primary curiousity_button" value="5">5</button>
-    <button class="btn btn-primary curiousity_button" value="6">6</button>
-    <button class="btn btn-primary curiousity_button" value="7">7</button>
-    <button class="btn btn-primary curiousity_button" value="8">8</button>
-    <button class="btn btn-primary curiousity_button" value="9">9</button>
-    <button class="btn btn-primary curiousity_button" value="10">10</button>
-    <input type="hidden" name="curiousity_rating" id="curiousity_rating">
-  </div>
   <div id="confidence_div">
     How confident are you about the answer to the question?<br>
     <button class="btn btn-primary confidence_button" value="1">1</button>
@@ -84,6 +70,20 @@
     <button class="btn btn-primary confidence_button" value="9">9</button>
     <button class="btn btn-primary confidence_button" value="10">10</button>
     <input type="hidden" name="confidence_rating" id="confidence_rating">
+  </div>
+  <div id="curiousity_div" style="align:center;">
+    How curious are you about the answer to the question?<br>
+    <button class="btn btn-primary curiousity_button" value="1">1</button>
+    <button class="btn btn-primary curiousity_button" value="2">2</button>
+    <button class="btn btn-primary curiousity_button" value="3">3</button>
+    <button class="btn btn-primary curiousity_button" value="4">4</button>
+    <button class="btn btn-primary curiousity_button" value="5">5</button>
+    <button class="btn btn-primary curiousity_button" value="6">6</button>
+    <button class="btn btn-primary curiousity_button" value="7">7</button>
+    <button class="btn btn-primary curiousity_button" value="8">8</button>
+    <button class="btn btn-primary curiousity_button" value="9">9</button>
+    <button class="btn btn-primary curiousity_button" value="10">10</button>
+    <input type="hidden" name="curiousity_rating" id="curiousity_rating">
   </div>
   <div id="answer_div">
     <h1>The correct answer was: </h1>
@@ -130,8 +130,8 @@ Phase.set_timer(function(){
   $("#resp_button").click();
 }, {{guess_duration}})
 $("#resp_button").on("click", function(){
-  $("#curiousity_div").show();
   $("#question_div").hide();
+  $("#confidence_div").show();
   var current_time = (new Date()).getTime();
  
   /* fix this if you want meaningful reaction time data
@@ -143,14 +143,14 @@ $("#resp_button").on("click", function(){
   */
   
 });
-$(".curiousity_button").on("click", function(){
-  $("#curiousity_rating").val($(this)[0].value);
-  $("#curiousity_div").hide();
-  $("#confidence_div").show();
-});
 $(".confidence_button").on("click", function(){
   $("#confidence_rating").val($(this)[0].value);
   $("#confidence_div").hide();
+  $("#curiousity_div").show();
+});
+$(".curiousity_button").on("click", function(){
+  $("#curiousity_rating").val($(this)[0].value);
+  $("#curiousity_div").hide();
   $("#answer_div").show();
   setTimeout(function(){
     Phase.submit();
