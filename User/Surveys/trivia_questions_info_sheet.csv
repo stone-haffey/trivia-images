@@ -1,0 +1,55 @@
+item_name,text,type,answers,values,optional,side_by_side,
+Instructions1,"<h2>University of Reading</h2><br>
+<div align=""right"">School of Psychology and Clinical Language Sciences<br>
+Whiteknights<br>
+Reading RG6 6AL</div>
+<br>
+<table class=""table"">
+  <tr>
+    <td><b>Investigator(s):</b></td>
+    <td><b>Email:</b></td>
+    <td><b>Telephone:</b></td>
+  </tr>
+  <tr>
+    <td><span style='color:red'>Kou Murayama</span></td>
+    <td><span style='color:red'>k.murayama@reading.ac.uk</span></td>
+    <td><span style='color:red'>(0)118 378 5558</span></td>
+  </tr>
+  <tr>
+    <td><span style='color:red'>Michiko Sakaki</span></td>
+    <td><span style='color:red'>michiko.sakaki@uni-tuebingen.de</span></td>
+  <td><span style='color:red'></span></td></tr>
+  <tr>
+    <td><b>Researcher(s):</b></td>
+  </tr>
+  <tr>
+    <td><span style='color:red'>Hannah Stone</span></td>
+    <td><span style='color:red'>hannah.j.stone@reading.ac.uk</span></td>
+    <td></td>
+  </tr>
+</table>
+<br>
+<h2>Information Sheet</h2><br>
+<h3>Title of Study: How we respond to quizzes</h3><br>
+
+We would be grateful to you if you could assist us by participating in our study exploring how individuals respond to quizzes. <br>
+<br>
+This research will be conducted online. Your will take approximately 60 minutes, during which time you will be asked to complete one of several tasks detailed below. You will receive £6.00 for your 60 minutes participation through Prolific.<br>
+<br>
+In this study, we will ask you to view a number of quiz questions and evaluate how you feel about each of them using a series of ratings/questions. We will also ask you to fill out several questionnaires on your demographic characteristics and your beliefs. <br>
+<br>
+Your data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 60 months from the completion of the project has elapsed.<br>
+<br>
+Data collected from this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.<br>
+<br>
+Taking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>
+<br>
+<i>This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct </i><br>
+<br>
+If you have any questions or concerns about the research, please feel free to contact Prof. Kou Murayama.<br>
+<br>
+Email: k.murayama@reading.ac.uk, Tel: +44-(0)118-378-5558.<br>
+<br>
+Thank you for your help.",instruct,,,,,
+consent,"If you agree to participate, please tick the box to consent and submit.",checkbox,I consent,1,No,yes,
+,,,,,,,

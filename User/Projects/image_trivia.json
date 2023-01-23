@@ -1,6 +1,6 @@
 {
   "all_procs": {
-    "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,\r\n0,survey,,,,,1,trivia_demographics.csv,,\r\n0,load_list,,,off,,1,,images.csv,\r\n0,trivia_image,user,This is the start of a new experiment.,off,10000,50,,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,,\r\n0,survey,,,survey_random,,1,openness_to_experience.csv,,"
+    "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,\r\n0,survey,,,,,1,trivia_image_info_sheet.csv,,\r\n0,survey,,,,,1,trivia_demographics.csv,,\r\n0,load_list,,,off,,1,,images.csv,\r\n0,trivia_image,user,This is the start of a new experiment.,off,10000,50,,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,,\r\n0,survey,,,survey_random,,1,openness_to_experience.csv,,"
   },
   "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,images.csv,procedure_1.csv,off,,on,,,5,,",
   "all_stims": {
@@ -670,6 +670,48 @@
       ],
       [
         "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "trivia_image_info_sheet.csv": [
+      [
+        "item_name",
+        "text",
+        "type",
+        "answers",
+        "values",
+        "optional",
+        "side_by_side",
+        ""
+      ],
+      [
+        "Instructions1",
+        "<h2>University of Reading</h2><br>\n<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Kou Murayama</span></td>\n    <td><span style='color:red'>k.murayama@reading.ac.uk</span></td>\n    <td><span style='color:red'>(0)118 378 5558</span></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Michiko Sakaki</span></td>\n    <td><span style='color:red'>michiko.sakaki@uni-tuebingen.de</span></td>\n  <td><span style='color:red'></span></td></tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Hannah Stone</span></td>\n    <td><span style='color:red'>hannah.j.stone@reading.ac.uk</span></td>\n    <td></td>\n  </tr>\n</table>\n<br>\n<h2>Information Sheet</h2><br>\n<h3>Title of Study: How we respond to pictures</h3><br>\n\nWe would be grateful to you if you could assist us by participating in our study exploring how individuals respond to pictures. <br>\n<br>\nThis research will be conducted online. Your will take approximately 60 minutes, during which time you will be asked to complete one of several tasks detailed below. You will receive £6.00 for your 60 minutes participation through Prolific.<br>\n<br>\nIn this study, we will ask you to view a number of pictures and evaluate how you feel about each of them using a series of ratings/questions. We will also ask you to fill out several questionnaires on your demographic characteristics and your beliefs. <br>\n<br>\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 60 months from the completion of the project has elapsed.<br>\n<br>\nData collected from this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.<br>\n<br>\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>\n<br>\n<i>This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct </i><br>\n<br>\nIf you have any questions or concerns about the research, please feel free to contact Prof. Kou Murayama.<br>\n<br>\nEmail: k.murayama@reading.ac.uk, Tel: +44-(0)118-378-5558.<br>\n<br>\nThank you for your help.",
+        "instruct",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "consent",
+        "If you agree to participate, please tick the box to consent and submit.",
+        "checkbox",
+        "I consent",
+        "1",
+        "No",
+        "yes",
+        ""
+      ],
+      [
         "",
         "",
         "",

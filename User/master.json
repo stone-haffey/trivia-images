@@ -10,7 +10,7 @@
     "projects": {
       "image_trivia": {
         "all_procs": {
-          "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,\r\n0,survey,,,,,1,trivia_demographics.csv,,\r\n0,load_list,,,off,,1,,images.csv,\r\n0,trivia_image,user,This is the start of a new experiment.,off,10000,50,,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,,\r\n0,survey,,,survey_random,,1,openness_to_experience.csv,,"
+          "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,\r\n0,survey,,,,,1,trivia_image_info_sheet.csv,,\r\n0,survey,,,,,1,trivia_demographics.csv,,\r\n0,load_list,,,off,,1,,images.csv,\r\n0,trivia_image,user,This is the start of a new experiment.,off,10000,50,,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,,\r\n0,survey,,,survey_random,,1,openness_to_experience.csv,,"
         },
         "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,images.csv,procedure_1.csv,off,,on,,,5,,",
         "all_stims": {
@@ -689,6 +689,48 @@
               "",
               ""
             ]
+          ],
+          "trivia_image_info_sheet.csv": [
+            [
+              "item_name",
+              "text",
+              "type",
+              "answers",
+              "values",
+              "optional",
+              "side_by_side",
+              ""
+            ],
+            [
+              "Instructions1",
+              "<h2>University of Reading</h2><br>\n<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Kou Murayama</span></td>\n    <td><span style='color:red'>k.murayama@reading.ac.uk</span></td>\n    <td><span style='color:red'>(0)118 378 5558</span></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Michiko Sakaki</span></td>\n    <td><span style='color:red'>michiko.sakaki@uni-tuebingen.de</span></td>\n  <td><span style='color:red'></span></td></tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Hannah Stone</span></td>\n    <td><span style='color:red'>hannah.j.stone@reading.ac.uk</span></td>\n    <td></td>\n  </tr>\n</table>\n<br>\n<h2>Information Sheet</h2><br>\n<h3>Title of Study: How we respond to pictures</h3><br>\n\nWe would be grateful to you if you could assist us by participating in our study exploring how individuals respond to pictures. <br>\n<br>\nThis research will be conducted online. Your will take approximately 60 minutes, during which time you will be asked to complete one of several tasks detailed below. You will receive £6.00 for your 60 minutes participation through Prolific.<br>\n<br>\nIn this study, we will ask you to view a number of pictures and evaluate how you feel about each of them using a series of ratings/questions. We will also ask you to fill out several questionnaires on your demographic characteristics and your beliefs. <br>\n<br>\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 60 months from the completion of the project has elapsed.<br>\n<br>\nData collected from this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.<br>\n<br>\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>\n<br>\n<i>This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct </i><br>\n<br>\nIf you have any questions or concerns about the research, please feel free to contact Prof. Kou Murayama.<br>\n<br>\nEmail: k.murayama@reading.ac.uk, Tel: +44-(0)118-378-5558.<br>\n<br>\nThank you for your help.",
+              "instruct",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "consent",
+              "If you agree to participate, please tick the box to consent and submit.",
+              "checkbox",
+              "I consent",
+              "1",
+              "No",
+              "yes",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
           ]
         },
         "phasetypes": {
@@ -701,7 +743,7 @@
       },
       "questions_trivia": {
         "all_procs": {
-          "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,\r\n0,survey,,,,,1,trivia_demographics.csv,,\r\n0,load_list,,,off,,1,,stimuli_1.csv,\r\n0,trivia_cur_conf_answer,user,,off,10000,50,,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,,\r\n0,survey,,,survey_random,,1,openness_to_experience.csv,,"
+          "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,\r\n0,survey,,,,,1,trivia_questions_info_sheet.csv,,\r\n0,survey,,,,,1,trivia_demographics.csv,,\r\n0,load_list,,,off,,1,,stimuli_1.csv,\r\n0,trivia_cur_conf_answer,user,,off,10000,50,,,\r\n0,survey,,,survey_random,,1,perceptual_curiosity.csv,,\r\n0,survey,,,survey_random,,1,diverse_curiosity.csv,,\r\n0,survey,,,survey_random,,1,sensation_seeking.csv,,\r\n0,survey,,,survey_random,,1,openness_to_experience.csv,,"
         },
         "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,",
         "all_stims": {
@@ -1370,6 +1412,48 @@
             ],
             [
               "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "trivia_questions_info_sheet.csv": [
+            [
+              "item_name",
+              "text",
+              "type",
+              "answers",
+              "values",
+              "optional",
+              "side_by_side",
+              ""
+            ],
+            [
+              "Instructions1",
+              "<h2>University of Reading</h2><br>\n<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Kou Murayama</span></td>\n    <td><span style='color:red'>k.murayama@reading.ac.uk</span></td>\n    <td><span style='color:red'>(0)118 378 5558</span></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Michiko Sakaki</span></td>\n    <td><span style='color:red'>michiko.sakaki@uni-tuebingen.de</span></td>\n  <td><span style='color:red'></span></td></tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Hannah Stone</span></td>\n    <td><span style='color:red'>hannah.j.stone@reading.ac.uk</span></td>\n    <td></td>\n  </tr>\n</table>\n<br>\n<h2>Information Sheet</h2><br>\n<h3>Title of Study: How we respond to quizzes</h3><br>\n\nWe would be grateful to you if you could assist us by participating in our study exploring how individuals respond to quizzes. <br>\n<br>\nThis research will be conducted online. Your will take approximately 60 minutes, during which time you will be asked to complete one of several tasks detailed below. You will receive £6.00 for your 60 minutes participation through Prolific.<br>\n<br>\nIn this study, we will ask you to view a number of quiz questions and evaluate how you feel about each of them using a series of ratings/questions. We will also ask you to fill out several questionnaires on your demographic characteristics and your beliefs. <br>\n<br>\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 60 months from the completion of the project has elapsed.<br>\n<br>\nData collected from this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.<br>\n<br>\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>\n<br>\n<i>This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct </i><br>\n<br>\nIf you have any questions or concerns about the research, please feel free to contact Prof. Kou Murayama.<br>\n<br>\nEmail: k.murayama@reading.ac.uk, Tel: +44-(0)118-378-5558.<br>\n<br>\nThank you for your help.",
+              "instruct",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "consent",
+              "If you agree to participate, please tick the box to consent and submit.",
+              "checkbox",
+              "I consent",
+              "1",
+              "No",
+              "yes",
+              ""
+            ],
+            [
               "",
               "",
               "",
@@ -2063,6 +2147,202 @@
         ],
         [
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "info_sheet_trivia_exp.csv": [
+        [
+          "item_name",
+          "text",
+          "type",
+          "answers",
+          "optional",
+          "values",
+          "side_by_side",
+          "btn_width",
+          ""
+        ],
+        [
+          "Gender",
+          "Gender",
+          "likert",
+          "Female|Male|Other",
+          "No",
+          "",
+          "yes",
+          "100px",
+          ""
+        ],
+        [
+          "Age",
+          "Age",
+          "number",
+          "",
+          "No",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Education",
+          "Education (which level are you currently in, or is the highest you've completed)",
+          "dropdown",
+          "Some high school| High school graduate| Some college, no degree| Associate's degree| Bachelor's degree|Graduate degree (Master's, Doctorate, etc.)",
+          "No",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "English_Fluency",
+          "Do you speak English fluently?",
+          "likert",
+          "Yes|No",
+          "No",
+          "",
+          "yes",
+          "200px",
+          ""
+        ],
+        [
+          "English_Age",
+          "At what age did you start learning English? (write \"0\" if from birth)",
+          "number",
+          "",
+          "No",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Country",
+          "What is your country of residence?",
+          "text",
+          "",
+          "No",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Handedness",
+          "What is your preferred hand?",
+          "likert",
+          "Left|Right|Both",
+          "No",
+          "",
+          "yes",
+          "100px",
+          ""
+        ],
+        [
+          "ethnicity",
+          "If you would like to please state your ethnicity",
+          "text",
+          "",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "trivia_image_info_sheet.csv": [
+        [
+          "item_name",
+          "text",
+          "type",
+          "answers",
+          "values",
+          "optional",
+          "side_by_side",
+          ""
+        ],
+        [
+          "Instructions1",
+          "<h2>University of Reading</h2><br>\n<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Kou Murayama</span></td>\n    <td><span style='color:red'>k.murayama@reading.ac.uk</span></td>\n    <td><span style='color:red'>(0)118 378 5558</span></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Michiko Sakaki</span></td>\n    <td><span style='color:red'>michiko.sakaki@uni-tuebingen.de</span></td>\n  <td><span style='color:red'></span></td></tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Hannah Stone</span></td>\n    <td><span style='color:red'>hannah.j.stone@reading.ac.uk</span></td>\n    <td></td>\n  </tr>\n</table>\n<br>\n<h2>Information Sheet</h2><br>\n<h3>Title of Study: How we respond to pictures</h3><br>\n\nWe would be grateful to you if you could assist us by participating in our study exploring how individuals respond to pictures. <br>\n<br>\nThis research will be conducted online. Your will take approximately 60 minutes, during which time you will be asked to complete one of several tasks detailed below. You will receive £6.00 for your 60 minutes participation through Prolific.<br>\n<br>\nIn this study, we will ask you to view a number of pictures and evaluate how you feel about each of them using a series of ratings/questions. We will also ask you to fill out several questionnaires on your demographic characteristics and your beliefs. <br>\n<br>\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 60 months from the completion of the project has elapsed.<br>\n<br>\nData collected from this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.<br>\n<br>\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>\n<br>\n<i>This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct </i><br>\n<br>\nIf you have any questions or concerns about the research, please feel free to contact Prof. Kou Murayama.<br>\n<br>\nEmail: k.murayama@reading.ac.uk, Tel: +44-(0)118-378-5558.<br>\n<br>\nThank you for your help.",
+          "instruct",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "consent",
+          "If you agree to participate, please tick the box to consent and submit.",
+          "checkbox",
+          "I consent",
+          "1",
+          "No",
+          "yes",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "trivia_questions_info_sheet.csv": [
+        [
+          "item_name",
+          "text",
+          "type",
+          "answers",
+          "values",
+          "optional",
+          "side_by_side",
+          ""
+        ],
+        [
+          "Instructions1",
+          "<h2>University of Reading</h2><br>\n<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Kou Murayama</span></td>\n    <td><span style='color:red'>k.murayama@reading.ac.uk</span></td>\n    <td><span style='color:red'>(0)118 378 5558</span></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Michiko Sakaki</span></td>\n    <td><span style='color:red'>michiko.sakaki@uni-tuebingen.de</span></td>\n  <td><span style='color:red'></span></td></tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td><span style='color:red'>Hannah Stone</span></td>\n    <td><span style='color:red'>hannah.j.stone@reading.ac.uk</span></td>\n    <td></td>\n  </tr>\n</table>\n<br>\n<h2>Information Sheet</h2><br>\n<h3>Title of Study: How we respond to quizzes</h3><br>\n\nWe would be grateful to you if you could assist us by participating in our study exploring how individuals respond to quizzes. <br>\n<br>\nThis research will be conducted online. Your will take approximately 60 minutes, during which time you will be asked to complete one of several tasks detailed below. You will receive £6.00 for your 60 minutes participation through Prolific.<br>\n<br>\nIn this study, we will ask you to view a number of quiz questions and evaluate how you feel about each of them using a series of ratings/questions. We will also ask you to fill out several questionnaires on your demographic characteristics and your beliefs. <br>\n<br>\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 60 months from the completion of the project has elapsed.<br>\n<br>\nData collected from this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.<br>\n<br>\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>\n<br>\n<i>This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct </i><br>\n<br>\nIf you have any questions or concerns about the research, please feel free to contact Prof. Kou Murayama.<br>\n<br>\nEmail: k.murayama@reading.ac.uk, Tel: +44-(0)118-378-5558.<br>\n<br>\nThank you for your help.",
+          "instruct",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "consent",
+          "If you agree to participate, please tick the box to consent and submit.",
+          "checkbox",
+          "I consent",
+          "1",
+          "No",
+          "yes",
+          ""
+        ],
+        [
           "",
           "",
           "",
@@ -3716,7 +3996,7 @@
     },
     "user": {
       "trivia_cur_conf_answer": "<!--\n/*  Collector (Garcia, Kornell, Kerr, Blake & Haffey)\n    A program for running experiments on the web\n    Copyright 2012-2016 Mikey Garcia & Nate Kornell\n\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License version 3 as published by\n    the Free Software Foundation.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>\n\n\t\tKitten/Cat release (2019-2022) author: Dr. Anthony Haffey\n*/\n-->\n<style>\n  #instruct_text {\n    margin: auto;\n    width: 500px;\n    padding: 50px;\n    max-height: 600px;\n    text-align: center;\n  }\n  #proceed_button {\n    position: absolute;\n    right: 20px;\n  }\n  #trial_contents {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    margin: auto;\n    width: 600px;\n    height: 600px;\n  }\n  #confidence_div, \n  #curiousity_div, \n  #answer_div{\n    display:none;\n  }\n</style>\n<div id=\"trial_contents\">\n  <div id=\"question_div\">\n    <div id=\"question\"></div>\n    \n    <input type=\"text\" id=\"quiz_response\" name=\"quiz_response\"> \n    <button class=\"btn btn-primary\" id=\"resp_button\">\n      Submit\n    </button>\n    \n  </div>\n  <div id=\"confidence_div\">\n    How confident are you about the answer to the question?<br>\n    <button class=\"btn btn-primary confidence_button\" value=\"1\">1</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"2\">2</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"3\">3</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"4\">4</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"5\">5</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"6\">6</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"7\">7</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"8\">8</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"9\">9</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"10\">10</button>\n    <input type=\"hidden\" name=\"confidence_rating\" id=\"confidence_rating\">\n  </div>\n  <div id=\"curiousity_div\" style=\"align:center;\">\n    How curious are you about the answer to the question?<br>\n    <button class=\"btn btn-primary curiousity_button\" value=\"1\">1</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"2\">2</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"3\">3</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"4\">4</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"5\">5</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"6\">6</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"7\">7</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"8\">8</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"9\">9</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"10\">10</button>\n    <input type=\"hidden\" name=\"curiousity_rating\" id=\"curiousity_rating\">\n  </div>\n  <div id=\"answer_div\">\n    <h1>The correct answer was: <span class=\"text-primary\" id=\"answer\"></span></h1>\n  </div>\n    \n  </div>\n</div>\n\n<script>\n\n\n\nvar these_images;\nPhase.set_timer(function(){\n  all_stimuli = Phase.get(\"all_stimuli\");\n  question_answer = all_stimuli.shift();\n  Phase.set(\"all_stimuli\", all_stimuli);\n  console.log(\"question_answer\");\n  console.log(question_answer);\n  $(\"#question\").html(question_answer.question);\n  $(\"#answer\").html(question_answer.answer);\n  //question_img\n  \n},0);\nvar baseline_time;\n/*\n * to start a timer at the start of a trial, you need Phase.set_timer()\n */\nPhase.set_timer(function(){\n  baseline_time = (new Date()).getTime();\n  $(\"#resp_button\").click();\n}, {{guess_duration}});\n\n$(\"#resp_button\").on(\"click\", function(){\n  $(\"#question_div\").hide();\n  $(\"#confidence_div\").show();\n  var current_time = (new Date()).getTime();\n \n});\n$(\".confidence_button\").on(\"click\", function(){\n  $(\"#confidence_rating\").val($(this)[0].value);\n  $(\"#confidence_div\").hide();\n  $(\"#curiousity_div\").show();\n});\n$(\".curiousity_button\").on(\"click\", function(){\n  $(\"#curiousity_rating\").val($(this)[0].value);\n  $(\"#curiousity_div\").hide();\n  $(\"#answer_div\").show();\n  setTimeout(function(){\n    Phase.submit();\n  },5000);\n});\n\n\n\n\n</script>\n",
-      "trivia_image": "<!--\n/*  Collector (Garcia, Kornell, Kerr, Blake & Haffey)\n    A program for running experiments on the web\n    Copyright 2012-2016 Mikey Garcia & Nate Kornell\n\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License version 3 as published by\n    the Free Software Foundation.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>\n\n\t\tKitten/Cat release (2019-2022) author: Dr. Anthony Haffey\n*/\n-->\n<style>\n  #instruct_text {\n    margin: auto;\n    width: 500px;\n    padding: 50px;\n    max-height: 600px;\n    text-align: center;\n  }\n  #proceed_button {\n    position: absolute;\n    right: 20px;\n  }\n  #trial_contents {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    margin: auto;\n    width: 600px;\n    height: 600px;\n  }\n  #confidence_div\n  #curiousity_div,\n  #answer_div{\n    display:none;\n  }\n</style>\n<div id=\"trial_contents\">\n  <div id=\"question_div\">\n    <img id=\"question_img\"/>\n    \n    <input type=\"text\" id=\"quiz_response\" name=\"quiz_response\"> \n    <button class=\"btn btn-primary\" id=\"resp_button\">\n      Submit\n    </button>\n    <input type=\"hidden\" id=\"quiz_rt\" name=\"quiz_rt\">\n  </div>\n  <div id=\"confidence_div\">\n    How confident are you about the answer to the question?<br>\n    <button class=\"btn btn-primary confidence_button\" value=\"1\">1</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"2\">2</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"3\">3</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"4\">4</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"5\">5</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"6\">6</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"7\">7</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"8\">8</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"9\">9</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"10\">10</button>\n    <input type=\"hidden\" name=\"confidence_rating\" id=\"confidence_rating\">\n  </div>\n  <div id=\"curiousity_div\" style=\"align:center;\">\n    How curious are you about the answer to the question?<br>\n    <button class=\"btn btn-primary curiousity_button\" value=\"1\">1</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"2\">2</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"3\">3</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"4\">4</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"5\">5</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"6\">6</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"7\">7</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"8\">8</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"9\">9</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"10\">10</button>\n    <input type=\"hidden\" name=\"curiousity_rating\" id=\"curiousity_rating\">\n  </div>\n  <div id=\"answer_div\">\n    <h1>The correct answer was: </h1>\n    <img id=\"answer_img\"/>\n  </div>\n    \n  </div>\n</div>\n\n<script>\nswitch(parent.parent.Project.get_vars.platform){\n  case \"preview\":\n  case \"localhost\":\n    org_repo = parent.parent.project_json.location.split(\"/\");\n    home_dir = parent.parent.CElectron.git.locate_repo({\n      org: org_repo[0],\n      repo: org_repo[1]\n    });\n    break;\n  default:\n    home_dir = \"../\";\n    break;\n}\n\nvar these_images;\nPhase.set_timer(function(){\n  all_stimuli = Phase.get(\"all_stimuli\");\n  these_images = all_stimuli.shift();\n  Phase.set(\"all_stimuli\", all_stimuli);\n  console.log(\"these_images\");\n  console.log(these_images);\n  $(\"#question_img\").prop(\"src\", home_dir + these_images.question_src.replace(\"../User\",\"/User\"));\n  $(\"#answer_img\").prop(\"src\", home_dir + these_images.answer_src.replace(\"../User\",\"/User\"));\n  \n  //question_img\n  \n},0);\nvar baseline_time;\n/*\n * to start a timer at the start of a trial, you need Phase.set_timer()\n */\nPhase.set_timer(function(){\n  baseline_time = (new Date()).getTime();\n  $(\"#resp_button\").click();\n}, {{guess_duration}})\n$(\"#resp_button\").on(\"click\", function(){\n  $(\"#question_div\").hide();\n  $(\"#confidence_div\").show();\n  var current_time = (new Date()).getTime();\n \n  /* fix this if you want meaningful reaction time data\n  if($(\"#quiz_rt\").val() > 0){\n    //do nothing\n  } else {\n    $(\"#quiz_rt\").val(current_time - baseline_time);\n  }\n  */\n  \n});\n$(\".confidence_button\").on(\"click\", function(){\n  $(\"#confidence_rating\").val($(this)[0].value);\n  $(\"#confidence_div\").hide();\n  $(\"#curiousity_div\").show();\n});\n$(\".curiousity_button\").on(\"click\", function(){\n  $(\"#curiousity_rating\").val($(this)[0].value);\n  $(\"#curiousity_div\").hide();\n  $(\"#answer_div\").show();\n  setTimeout(function(){\n    Phase.submit();\n  },5000);\n});\n\n\n</script>\n",
+      "trivia_image": "<!--\n/*  Collector (Garcia, Kornell, Kerr, Blake & Haffey)\n    A program for running experiments on the web\n    Copyright 2012-2016 Mikey Garcia & Nate Kornell\n\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License version 3 as published by\n    the Free Software Foundation.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>\n\n\t\tKitten/Cat release (2019-2022) author: Dr. Anthony Haffey\n*/\n-->\n<style>\n  #instruct_text {\n    margin: auto;\n    width: 500px;\n    padding: 50px;\n    max-height: 600px;\n    text-align: center;\n  }\n  #proceed_button {\n    position: absolute;\n    right: 20px;\n  }\n  #trial_contents {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    margin: auto;\n    width: 600px;\n    height: 600px;\n  }\n  #confidence_div,\n  #curiousity_div,\n  #answer_div{\n    display:none;\n  }\n</style>\n<div id=\"trial_contents\">\n  <div id=\"question_div\">\n    <img id=\"question_img\"/>\n    \n    <input type=\"text\" id=\"quiz_response\" name=\"quiz_response\"> \n    <button class=\"btn btn-primary\" id=\"resp_button\">\n      Submit\n    </button>\n    <input type=\"hidden\" id=\"quiz_rt\" name=\"quiz_rt\">\n  </div>\n  <div id=\"confidence_div\">\n    How confident are you about the answer to the question?<br>\n    <button class=\"btn btn-primary confidence_button\" value=\"1\">1</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"2\">2</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"3\">3</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"4\">4</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"5\">5</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"6\">6</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"7\">7</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"8\">8</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"9\">9</button>\n    <button class=\"btn btn-primary confidence_button\" value=\"10\">10</button>\n    <input type=\"hidden\" name=\"confidence_rating\" id=\"confidence_rating\">\n  </div>\n  <div id=\"curiousity_div\" style=\"align:center;\">\n    How curious are you about the answer to the question?<br>\n    <button class=\"btn btn-primary curiousity_button\" value=\"1\">1</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"2\">2</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"3\">3</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"4\">4</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"5\">5</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"6\">6</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"7\">7</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"8\">8</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"9\">9</button>\n    <button class=\"btn btn-primary curiousity_button\" value=\"10\">10</button>\n    <input type=\"hidden\" name=\"curiousity_rating\" id=\"curiousity_rating\">\n  </div>\n  <div id=\"answer_div\">\n    <h1>The correct answer was: </h1>\n    <img id=\"answer_img\"/>\n  </div>\n    \n  </div>\n</div>\n\n<script>\nswitch(parent.parent.Project.get_vars.platform){\n  case \"preview\":\n  case \"localhost\":\n    org_repo = parent.parent.project_json.location.split(\"/\");\n    home_dir = parent.parent.CElectron.git.locate_repo({\n      org: org_repo[0],\n      repo: org_repo[1]\n    });\n    break;\n  default:\n    home_dir = \"../\";\n    break;\n}\n\nvar these_images;\nPhase.set_timer(function(){\n  all_stimuli = Phase.get(\"all_stimuli\");\n  these_images = all_stimuli.shift();\n  Phase.set(\"all_stimuli\", all_stimuli);\n  console.log(\"these_images\");\n  console.log(these_images);\n  $(\"#question_img\").prop(\"src\", home_dir + these_images.question_src.replace(\"../User\",\"/User\"));\n  $(\"#answer_img\").prop(\"src\", home_dir + these_images.answer_src.replace(\"../User\",\"/User\"));\n  \n  //question_img\n  \n},0);\nvar baseline_time;\n/*\n * to start a timer at the start of a trial, you need Phase.set_timer()\n */\nPhase.set_timer(function(){\n  baseline_time = (new Date()).getTime();\n  $(\"#resp_button\").click();\n}, {{guess_duration}})\n$(\"#resp_button\").on(\"click\", function(){\n  $(\"#question_div\").hide();\n  $(\"#confidence_div\").show();\n  var current_time = (new Date()).getTime();\n \n  /* fix this if you want meaningful reaction time data\n  if($(\"#quiz_rt\").val() > 0){\n    //do nothing\n  } else {\n    $(\"#quiz_rt\").val(current_time - baseline_time);\n  }\n  */\n  \n});\n$(\".confidence_button\").on(\"click\", function(){\n  $(\"#confidence_rating\").val($(this)[0].value);\n  $(\"#confidence_div\").hide();\n  $(\"#curiousity_div\").show();\n});\n$(\".curiousity_button\").on(\"click\", function(){\n  $(\"#curiousity_rating\").val($(this)[0].value);\n  $(\"#curiousity_div\").hide();\n  $(\"#answer_div\").show();\n  setTimeout(function(){\n    Phase.submit();\n  },5000);\n});\n\n\n</script>\n",
       "load_list": "<script>\nall_stimuli = parent.parent.Collector.PapaParsed(\n  Phase.get_stim(\"{{stim_list}}\")\n);\n\n/*\n * shuffle/randomise order\n */\n\n// https://stackoverflow.com/a/12646864\n/* Randomize array in-place using Durstenfeld shuffle algorithm */\nfunction shuffleArray(array) {\n  for (var i = array.length - 1; i > 0; i--) {\n    var j = Math.floor(Math.random() * (i + 1));\n    var temp = array[i];\n    array[i] = array[j];\n    array[j] = temp;\n  }\n}\nshuffleArray(all_stimuli);\n\n\nPhase.set(\"all_stimuli\", all_stimuli);\nconsole.log(\"all_stimuli\");\nconsole.log(all_stimuli);\n\nPhase.set_timer(function(){\n  Phase.submit();\n}, 100);\n</script>"
     },
     "version": 0

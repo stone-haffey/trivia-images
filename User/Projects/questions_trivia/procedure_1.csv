@@ -1,4 +1,5 @@
 item,phasetype,max_time,text,shuffle_1,guess_duration,weight,survey,stim_list,
+0,survey,,,,,1,trivia_questions_info_sheet.csv,,
 0,survey,,,,,1,trivia_demographics.csv,,
 0,load_list,,,off,,1,,stimuli_1.csv,
 0,trivia_cur_conf_answer,user,,off,10000,50,,,
