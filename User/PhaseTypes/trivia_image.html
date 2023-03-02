@@ -134,14 +134,7 @@ $("#resp_button").on("click", function(){
   $("#question_div").hide();
   $("#confidence_div").show();
   var current_time = (new Date()).getTime();
- 
-  /* fix this if you want meaningful reaction time data
-  if($("#quiz_rt").val() > 0){
-    //do nothing
-  } else {
-    $("#quiz_rt").val(current_time - baseline_time);
-  }
-  */
+
   
 });
 $(".confidence_button").on("click", function(){
