@@ -11,3 +11,4 @@ We now ask that you fill in the questionnaires on the following pages.<br><br>Pl
 0,survey,,,survey_random,,1,diverse_curiosity.csv,,
 0,survey,,,survey_random,,1,sensation_seeking.csv,,
 0,survey,,,survey_random,,1,openness_to_experience.csv,,
+0,instruct,,<h2>Thank you for completing this study </h2><br><br>Please copy the following completion code to enter into Prolific:<br><br><h2>CMNXZ1LY</h2> <br><br>Please press <b>Proceed</b> to move to the final page of the study.,,,1,,,
