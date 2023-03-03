@@ -92,8 +92,8 @@
     
   </div>
 </div>
-<input type="hidden" name = "stim_question" value = "{{question_src}}">
-<input type="hidden" name = "stim_answer" value = "{{answer_src}}">
+<input type="hidden" id = "stim_question" name = "stim_question" value = "{{question_src}}">
+<input type="hidden" id = "stim_answer" name = "stim_answer" value = "{{answer_src}}">
 <script>
 switch(parent.parent.Project.get_vars.platform){
   case "preview":
@@ -118,7 +118,8 @@ Phase.set_timer(function(){
   console.log(these_images);
   $("#question_img").prop("src", home_dir + these_images.question_src.replace("../User","/User"));
   $("#answer_img").prop("src", home_dir + these_images.answer_src.replace("../User","/User"));
-  
+  $("#stim_question").val(home_dir + these_images.question_src.replace("../User","/User"));
+  $("#stim_answer").val(home_dir + these_images.answer_src.replace("../User","/User"));
   //question_img
   
 },0);

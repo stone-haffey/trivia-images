@@ -94,8 +94,8 @@
     
   </div>
 </div>
-<input type="hidden" name = "stim_question" value = "{{question}}">
-<input type="hidden" name = "stim_answer" value = "{{answer}}">
+<input type="hidden" id = "stim_question" name = "stim_question" value = "{{question}}">
+<input type="hidden" id = "stim_answer" name = "stim_answer" value = "{{answer}}">
 <script>
 
 
@@ -109,6 +109,8 @@ Phase.set_timer(function(){
   console.log(question_answer);
   $("#question").html(question_answer.question);
   $("#answer").html(question_answer.answer);
+  $("#stim_question").val(question_answer.question);
+  $("#stim_answer").val(question_answer.answer);
   //question_img
   
 },0);
